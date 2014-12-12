@@ -13,7 +13,6 @@ if (!class_exists("DocumentParser")) {
 //if (IN_MANAGER_MODE != 'true' && !$modx->hasPermission('exec_module')) die('<b>INCLUDE_ORDERING_ERROR</b><br /><br />Please use the MODX Content Manager instead of accessing this file directly.');
 
 require_once __DIR__ . '/config.php'; // include config 
-
 //$modx->db->query('DROP TABLE IF EXISTS ' . $table . ';');
 $sqlTable = '
 CREATE TABLE IF NOT EXISTS ' . $table . '(
