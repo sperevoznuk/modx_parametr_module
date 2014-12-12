@@ -2,6 +2,13 @@ var $modal;
 var $url_modul ;
 
 $(document).ready(function () {
+    // init form 
+    $(".params-popup-close").click(function(){
+        $(".params-modal-front-conteiner").css({'display':'none'})
+    })
+    
+    
+    
     $url_modul = $("base").attr("href") + "assets/modules/parametr/parametr_modul.php"
     $modal = $('#ajax-modal');
 

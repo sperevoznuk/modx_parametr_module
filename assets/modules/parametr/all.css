@@ -183,3 +183,35 @@
     background-color: #fff;
     border-radius: 5px;
 }
+
+.params-popup-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #008ac3;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    color: #008ac3;
+    font-size: 20px;
+    transition: 0.4s;
+    text-align: center;
+    line-height: 28px;
+}
+.params-popup-close:hover {
+    width: 32px;
+    height: 32px;
+    right: 8px;
+    top: 8px;
+    font-size: 22px;
+    line-height: 32px;
+}
+t:hover{ 
+    color: #A3A39A;
+    cursor: pointer;
+    border: 1px solid;
+    margin: -1px;
+}
