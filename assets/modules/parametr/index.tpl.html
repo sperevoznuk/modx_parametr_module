@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base href="[+base_href+]"/>
+    <title>[+title+]</title>
+
+    <link href="assets/modules/parametr/css/all.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/modules/parametr/lib/jquery.json-2.4.min.js"></script>
+    <script type="text/javascript" src="assets/modules/parametr/lib/jquery-ui-1.10.4.min.js"></script>
+
+    <script type="text/javascript" src="assets/modules/parametr/main.js"></script>
+    <script type="text/javascript" src="assets/plugins/tinymce/tiny_mce/tiny_mce.js?231077"></script>
+    <script type="text/javascript" src="assets/plugins/tinymce/js/xconfig.js"></script>
+    <script type="text/javascript" src="assets/plugins/tinymce/js/tinymce.linklist.php"></script>
+
+
+</head>
+<body>
+
+<h2 class="title">Список параметров</h2>
+
+<div class="left-col">
+    <ul class="buttons">
+        <li class="add button">+</li>
+        <li class="rem button">-</li>
+    </ul>
+    <ul class="list-params">
+        [+list-params+]
+    </ul>
+</div>
+<div class="edit-area" style="display: none">
+    <section class="tabs">
+        [+tablang+]
+        <div style="clear:both"></div>
+        <form class="tabs_cont">
+
+        </form>
+    </section>
+    <input type="checkbox" id="richtext" name="richtext"/> <label for="richtext">Визуальный редактор</label>
+    <button class="save" style="display: none">Сохранить</button>
+</div>
+
+</body>
+</html>

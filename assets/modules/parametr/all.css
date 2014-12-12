@@ -1,0 +1,159 @@
+.list-params {
+    list-style: none;
+    height: 514px;
+    overflow-y: scroll;
+    margin: 0;
+    float: left;
+    border: 1px solid #A2A2A2;
+    padding: 0;
+}
+
+.list-params li {
+    width: 73px;
+    height: 20px;
+    font-size: 14pt;
+    padding: 5px 0px 0 9px;
+
+}
+
+.list-params li span {
+    font-size: 10pt;
+    vertical-align: middle;
+    color: rgb(231, 162, 176);
+    font-style: italic;
+}
+
+.list-params li:hover, li.active {
+    background-color: rgb(141, 201, 253);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.edit-area {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.left-col {
+    width: 100px;
+    display: block;
+    float: left;
+}
+
+
+
+.tabs {
+    position: relative;
+    margin: 0 auto;
+}
+
+.tabs label {
+    display: block;
+    float: left;
+    background: #ffffff;
+
+    background: -o-linear-gradient(top, #ffffff 0%, #eff0f4 4%, #dddee0 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #eff0f4 4%, #dddee0 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #eff0f4 4%, #dddee0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddee0', GradientType=0);
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    border-right: 1px solid #f3f3f3;
+    border-left: 1px solid #ccc;
+    color: #555;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #fff 0 1px 0;
+    z-index: 1;
+}
+
+.tabs input {
+    position: absolute;
+    left: -9999px;
+}
+
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3,
+#tab_4:checked ~ #tab_l4,
+#tab_5:checked ~ #tab_l5 {
+    background: #F1F1F1;
+    border-bottom: 1px;
+
+    top: 0;
+    z-index: 3;
+}
+
+.tabs_cont {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+
+}
+
+.tabs_cont > div {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    opacity: 0;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.tabs_cont textarea {
+    width: 950px;
+    height: 350px;
+}
+
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3,
+#tab_4:checked ~ .tabs_cont #tab_c4,
+#tab_5:checked ~ .tabs_cont #tab_c5 {
+    position: static;
+    left: 0;
+    opacity: 1;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff 0%, #eff0f4 4%, #dddee0 100%);
+    cursor: pointer;
+    width: 48%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 50px;
+    float: left;
+    margin: 0 -3px 0 0px;
+}
+
+.button:hover {
+    background: rgb(141, 201, 253);
+}
+
+.add {
+    border-radius: 6px 0 0 0;
+}
+
+.rem {
+    border-radius: 0px 6px 0 0;
+}
+
+.save {
+    float: right;
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/prettify.css" rel="stylesheet"/>
+    <link href="css/bootstrap-modal-bs3patch.css" rel="stylesheet"/>
+    <link href="css/bootstrap-modal.css" rel="stylesheet"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script src="lib/bootstrap-modalmanager.js"></script>
+    <script src="lib/bootstrap-modal.js"></script>
+    <script id="ajax" type="text/javascript">
+        $(document).ready(function () {
+            var $modal = $('#ajax-modal');
+            $('.demo').on('click', function () {
+                $('body').modalmanager('loading');
+                $modal.modal()
+            });
+
+            $modal.on('click', '.update', function () {
+                $modal.modal('loading');
+                $modal.modal('loading').find('.modal-body');
+            });
+
+
+        })
+
+
+    </script>
+</head>
+<body>
+<div class="page-container">
+    <div class="container" style="position: relative">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="text-center">
+                    <button class="demo btn btn-primary btn-lg" data-toggle="modal">View Demo</button>
+                </div>
+            </div>
+            <br/>
+        </div>
+    </div>
+</div>
+
+
+<div id="ajax-modal" class="modal fade" tabindex="-1" style="display: none;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Modal header</h3>
+    </div>
+    <div class="modal-body">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
+            <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <textarea class="edit-area">qoqpuhpqoijr4io[j</textarea>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <textarea class="edit-area">qoqpuhpqoijr4io[j</textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+        <button type="button" class="btn btn-primary">Ok</button>
+    </div>
+</div>
+
+
+</body>
+</html>
